@@ -1,0 +1,87 @@
+/* BLOG PAGE STYLES */
+
+/* BLOG HEADER STYLES */
+
+.blog-hero {
+    background-image: url(../willow-assets/blog-image-1.jpg);
+    @include small-hero();
+}
+
+.title {
+    color: #ffffff;
+    text-transform: uppercase;
+    // font-size: 5rem;
+    @include fluid-type (2.5rem, 5rem, 360px, 1300px);
+    font-family: $primary-font;
+    display: flex;
+    align-items: flex-end;
+    height: 83%;
+}
+
+.main-blog-container {
+    background-color: $tertiary-color;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.aside-container {
+    width: calc(36% - 40px);
+}
+
+.blog-container {
+    width: calc(64% - 40px);
+}
+
+.aside-container,
+.blog-container {
+    margin: 20px;
+    margin-top: 90px;
+    margin-left: 0;
+}
+
+
+.blog {
+    background-color: #fff;
+    padding: 35px;
+    margin-bottom: 20px;
+    border-bottom: 8px solid #709B6B;
+}
+
+.blog-aside,
+.related-posts {
+    padding: 38px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    
+
+    .blog-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #709B6B;
+        text-transform: none;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
+
+.comments {
+
+    .comment-1,
+    .comment-2 {
+        background-color: #fff;
+        display: flex;
+        margin: 10px 0;
+        padding: 40px;
+        border-bottom: 8px solid #709B6B;
+
+        .comment-container img {
+        width: 125px;
+        margin: 10px 20px 0 0;
+
+        }
+    }
+}
